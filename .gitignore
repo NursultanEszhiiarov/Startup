@@ -1,0 +1,4 @@
+# just any file
+logs/
+#txt files
+docs/*.txt
