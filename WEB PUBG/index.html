@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>PUBG</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <div id="logo" onclick="slowScroll('#top')">
+            <span>Pm_turn1r</span>
+        </div>
+        <div id="about">
+            <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+            <a href="#" title="Преимущества" onclick="slowScroll('#overiew')">Преимущества</a>
+            <a href="#" title="Контакты" onclick="slowScroll('#contacts')">Контакты</a>
+            <a href="#" title="Ответы на вопросы" onclick="slowScroll('#faq')">Ответы на вопросы</a>
+        </div>
+    </header>
+    <div id="top">
+        <h1>PUBG</h1>
+        <h2>Как стиль жизни</h2>
+    </div>
+
+    <div id="main">
+        <div class="intro">
+            <h2>Наши услуги помогут вам!</h2>
+            <span>Вы можете участвовать в турнирах по PUBG MOBILE</span>
+        </div>
+        <div class="text">
+            <span>Вы можете участвовать в турнирах по  PUBG MOBILE, где вы можете выиграть значительную сумму денег, а точнее не за призовые места, а за каждое убийство игрока т.е. убил 1 персонажа 30руб.(30сом,  150 тенге), если вы побили рекорд по убийствам то каждое убийство будет считаться по 40руб.(40 сомб, 200 тенге). Если вы боитесь что просто потеряете деньги и хотите проверить себя, то у нас проводятся бесплатные турниры, где вы можете проверить себя. Удачи боец!!! </span>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script> 
+        function slowScroll(id){
+                $('body').animate({
+                    scrollTop: $(id).offset().top
+                }, 500);
+        }
+
+        $(document).on("scroll", function(){
+            if($(window).scrollTop==0)
+                $("header").removeClass("fixed");
+            else
+            $("header").attr("class", "fixed");
+        });
+    </script>
+
+	
+
+</body>
+</html>
